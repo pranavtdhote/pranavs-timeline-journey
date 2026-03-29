@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+# 🚀 Pranav Dhote — Developer Portfolio
 
-## Project info
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;AI+%2F+ML+Enthusiast;Blockchain+Developer;Building+Real+World+Projects" />
+</p>
 
-**URL**: https://lovable.dev/projects/0014c9b2-e678-4775-a6b8-4c3aa8a9c15d
+---
 
-## How can I edit this code?
+## 🌐 Live Portfolio
+🔗 **[Visit My Portfolio](#)** *(Add your deployed link here)*
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 👨‍💻 About Me
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0014c9b2-e678-4775-a6b8-4c3aa8a9c15d) and start prompting.
+- 🎓 B.Tech IT Student  
+- 💡 Passionate about **AI, ML, Blockchain & Full Stack Development**  
+- 🚀 Building real-world impactful projects  
+- 📈 Always learning & exploring new technologies  
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 💻 Languages
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
+![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python)
+![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🌐 Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+![HTML](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5)
+![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)
 
-Follow these steps:
+### ⚙️ Backend
+![Node.js](https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=node.js)
+![Express.js](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🗄️ Database
+![MongoDB](https://img.shields.io/badge/MongoDB-green?style=for-the-badge&logo=mongodb)
+![MySQL](https://img.shields.io/badge/MySQL-blue?style=for-the-badge&logo=mysql)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ⛓️ Blockchain
+![Solidity](https://img.shields.io/badge/Solidity-black?style=for-the-badge&logo=solidity)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📂 Featured Projects
 
-**Edit a file directly in GitHub**
+### 🔗 CharityConnect (Blockchain Donation System)
+- 💡 Transparent donation platform using smart contracts  
+- ⚙️ Tech: Solidity, React, Ethers.js, Hardhat  
+- 🚀 Features: Milestone-based fund release, transparency  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### 📊 GenAI Financial Analyzer
+- 🤖 AI system for analyzing financial reports  
+- ⚙️ Tech: FastAPI, LLMs, NLP, Knowledge Graphs  
+- 📈 Features: Multi-year analysis, insights, anomaly detection  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+### 🛒 E-Commerce Cart System
+- 🛍️ Fully functional shopping cart  
+- ⚙️ Tech: HTML, CSS, JS, MongoDB  
+- 📦 Features: Cart, checkout, authentication  
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 Research Work
 
-## How can I deploy this project?
+### 🧠 GenAI Financial Analysis System
+- 📊 Automated financial insights using LLMs & NLP  
+- 🔍 Includes hallucination guard & knowledge graphs  
 
-Simply open [Lovable](https://lovable.dev/projects/0014c9b2-e678-4775-a6b8-4c3aa8a9c15d) and click on Share -> Publish.
+### ⛓️ Blockchain Charity System
+- 🔐 Secure and transparent donation tracking  
+- 📈 Enhances trust using decentralized architecture  
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📜 Certifications
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- ☁️ AWS Architecting  
+- 📊 Data Analytics Bootcamp  
+- 💻 Full Stack Web Development  
+- 🤖 AI/ML Workshop  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+## 📈 Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
+</p>
+
+---
+
+## 🌍 Connect With Me
+
+<p align="center">
+  <a href="https://linkedin.com/in/YOUR_LINK">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="mailto:YOUR_EMAIL">
+    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail"/>
+  </a>
+  <a href="https://github.com/YOUR_USERNAME">
+    <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github"/>
+  </a>
+</p>
+
+---
+
+## ⚡ Fun Fact
+> I build projects that combine **AI + Blockchain + Full Stack** to solve real-world problems 🚀
+
+---
+
+<p align="center">
+  ⭐ If you like my work, consider giving a star!
+</p>
