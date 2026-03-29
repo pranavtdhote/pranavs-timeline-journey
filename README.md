@@ -7,7 +7,8 @@
 ---
 
 ## 🌐 Live Portfolio
-🔗 **[Visit My Portfolio](#)** *(https://pranavtdhote.vercel.app/)*
+🔗 **[Visit My Portfolio](#)** *(Add your deployed link here)*
+
 ---
 
 ## 👨‍💻 About Me
@@ -80,17 +81,7 @@
 - 🔐 Secure and transparent donation tracking  
 - 📈 Enhances trust using decentralized architecture  
 
----
-
-## 📜 Certifications
-
-- ☁️ AWS Architecting  
-- 📊 Data Analytics Bootcamp  
-- 💻 Full Stack Web Development  
-- 🤖 AI/ML Workshop  
-
----
-
+--
 
 ## 🌍 Connect With Me
 
