@@ -18,7 +18,7 @@ export const certificationsData: Certification[] = [
     icon: "🌐",
     skills: ["HTML", "CSS", "JavaScript", "Node.js", "React", "Backend Development"],
     credentialId: "UC-56149a79-2c31-4005-a56a-345b5707215d",
-    pdfUrl: "./public/UC-56149a79-2c31-4005-a56a-345b5707215d (2).pdf"
+    pdfUrl: "/UC-56149a79-2c31-4005-a56a-345b5707215d (2).pdf"
   },
 
   {
@@ -38,7 +38,7 @@ export const certificationsData: Certification[] = [
     date: "February 2025",
     icon: "☁️",
     skills: ["Salesforce", "Cloud Computing", "Data Modeling", "Security", "Analytics"],
-    pdfUrl: "./public/Net Gyani AISSMSIOIT Certificate v1.0  (1).pdf"
+    pdfUrl: "/Net Gyani AISSMSIOIT Certificate v1.0  (1).pdf"
   },
 
   {
@@ -48,7 +48,7 @@ export const certificationsData: Certification[] = [
     date: "March 2025",
     icon: "💻",
     skills: ["HTML", "CSS", "JavaScript", "Frontend Development"],
-    pdfUrl: "./public/introductiontofrontend_certificate (1).pdf"
+    pdfUrl: "/introductiontofrontend_certificate (1).pdf"
   },
 
   {
@@ -59,7 +59,7 @@ export const certificationsData: Certification[] = [
     icon: "🤖",
     skills: ["Artificial Intelligence", "Machine Learning", "AI Fundamentals"],
     credentialId: "SIPL2024-65",
-    pdfUrl: "./public/17-10-24, 939 AM Microsoft Lens.pdf"
+    pdfUrl: "/17-10-24, 939 AM Microsoft Lens.pdf"
   },
 
   {
@@ -69,7 +69,7 @@ export const certificationsData: Certification[] = [
     date: "June 2023",
     icon: "📊",
     skills: ["Data Analytics", "Data Visualization", "Statistics", "Data Processing"],
-    pdfUrl: "./public/Pranav T Dhote.pdf"
+    pdfUrl: "/Pranav T Dhote.pdf"
   },
 
 ];
