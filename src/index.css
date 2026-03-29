@@ -2,57 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Developer-Experience Portfolio Design System
+   Colors: #0B0F14 bg, neon cyan primary, soft purple secondary, terminal green accent
+   Fonts: JetBrains Mono (code), Inter (body)
 */
 
 @layer base {
   :root {
-    --background: 220 25% 10%;
-    --foreground: 210 40% 98%;
+    /* STRICT DARK THEME ONLY */
+    --background: 215 30% 6%; /* #0B0F14 approximate */
+    --foreground: 210 40% 93%;
 
-    --card: 220 20% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 30% 9%;
+    --card-foreground: 210 40% 93%;
 
-    --popover: 220 25% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 216 32% 7%;
+    --popover-foreground: 210 40% 93%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 185 100% 50%;
+    --primary-foreground: 220 25% 5%;
 
-    --secondary: 220 17% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 270 60% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 160 84% 39%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 142 72% 45%;
+    --accent-foreground: 220 25% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 25%;
-    --input: 220 17% 20%;
-    --ring: 217 91% 60%;
+    --border: 215 20% 18%;
+    --input: 215 25% 15%;
+    --ring: 185 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Timeline colors */
-    --timeline-primary: 217 91% 60%;
-    --timeline-accent: 160 84% 39%;
-    --timeline-muted: 220 15% 30%;
-    
+    /* Timeline */
+    --timeline-primary: 185 100% 50%;
+    --timeline-accent: 142 72% 45%;
+    --timeline-muted: 215 20% 25%;
+
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.2), hsl(160 84% 39% / 0.2));
-    --gradient-card: linear-gradient(180deg, hsl(220 20% 15%), hsl(220 20% 12%));
-    --gradient-timeline: linear-gradient(to bottom, hsl(217 91% 60%), hsl(160 84% 39%));
-    
+    --gradient-hero: linear-gradient(135deg, hsl(185 100% 50% / 0.12), hsl(270 60% 65% / 0.12));
+    --gradient-card: linear-gradient(180deg, hsl(215 30% 9%), hsl(216 32% 7%));
+    --gradient-timeline: linear-gradient(to bottom, hsl(185 100% 50%), hsl(142 72% 45%));
+
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(220 25% 5% / 0.5);
-    
-    /* Animations */
+    --shadow-glow: 0 0 40px hsl(185 100% 50% / 0.25);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -62,7 +63,223 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
+  html, body {
     @apply bg-background text-foreground;
+    cursor: none;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    max-width: 100vw;
+  }
+
+
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(216 35% 5%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(185 100% 50% / 0.3);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(185 100% 50% / 0.5);
+  }
+
+  /* Selection */
+  ::selection {
+    background: hsl(185 100% 50% / 0.3);
+    color: hsl(0 0% 100%);
+  }
+}
+
+@layer components {
+  /* ——— PREMIUM GLASS SYSTEM ——— */
+  .glass {
+    background: hsl(215 30% 9% / 0.5);
+    backdrop-filter: blur(24px) saturate(1.2);
+    -webkit-backdrop-filter: blur(24px) saturate(1.2);
+    border: 1px solid hsl(215 20% 25% / 0.3);
+  }
+
+  .glass-panel {
+    background: hsl(215 30% 9% / 0.4);
+    backdrop-filter: blur(32px) saturate(1.3);
+    -webkit-backdrop-filter: blur(32px) saturate(1.3);
+    border: 1px solid hsl(215 20% 30% / 0.2);
+    box-shadow:
+      0 8px 32px hsl(0 0% 0% / 0.3),
+      0 0 0 1px hsl(185 100% 50% / 0.03),
+      inset 0 1px 0 hsl(0 0% 100% / 0.04);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-panel:hover {
+    border-color: hsl(185 100% 50% / 0.15);
+    box-shadow:
+      0 16px 48px hsl(0 0% 0% / 0.4),
+      0 0 0 1px hsl(185 100% 50% / 0.08),
+      0 0 40px hsl(185 100% 50% / 0.06),
+      inset 0 1px 0 hsl(0 0% 100% / 0.06);
+  }
+
+  /* ——— GLOW BORDER (PREMIUM) ——— */
+  .glow-border {
+    position: relative;
+  }
+  .glow-border::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, hsl(185 100% 50% / 0.3), hsl(270 60% 65% / 0.3), hsl(142 72% 45% / 0.3));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glow-border:hover::after {
+    opacity: 1;
+  }
+
+  /* ——— ANTI-GRAVITY FLOAT ——— */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-4px) rotate(0.3deg); }
+  }
+  .float-subtle {
+    animation: float 6s ease-in-out infinite;
+  }
+  .float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+
+  /* ——— TERMINAL ——— */
+  .terminal-text {
+    font-family: 'JetBrains Mono', monospace;
+    color: hsl(142 72% 45%);
+  }
+
+  /* ——— SHIMMER ——— */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(185 100% 50% / 0.06), transparent);
+    animation: shimmer 4s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 200%; }
+  }
+
+  /* ——— CURSOR RIPPLE ——— */
+  @keyframes ripple {
+    0% { width: 0px; height: 0px; opacity: 0.6; }
+    100% { width: 60px; height: 60px; opacity: 0; border-width: 1.5px; }
+  }
+
+  /* ——— NEON TEXT ——— */
+  .text-neon {
+    color: hsl(185 100% 50%);
+    text-shadow: 0 0 10px hsl(185 100% 50% / 0.4), 0 0 40px hsl(185 100% 50% / 0.15);
+  }
+
+  /* ——— SECTION REVEAL ——— */
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .section-reveal.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* ——— 3D TILT CARD (PREMIUM) ——— */
+  .tilt-card {
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tilt-card:hover {
+    box-shadow:
+      0 25px 60px -12px hsl(185 100% 50% / 0.15),
+      0 0 40px hsl(185 100% 50% / 0.08);
+  }
+
+  /* ——— MAC TERMINAL DOTS ——— */
+  .terminal-dots {
+    display: flex;
+    gap: 6px;
+  }
+  .terminal-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+  }
+  .terminal-dots span:nth-child(1) { background: #FF5F57; }
+  .terminal-dots span:nth-child(2) { background: #FEBC2E; }
+  .terminal-dots span:nth-child(3) { background: #28C840; }
+
+  /* ——— MAGNETIC HOVER (PREMIUM) ——— */
+  .magnetic-hover {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .magnetic-hover:hover {
+    transform: scale(1.04);
+  }
+  .magnetic-hover:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
+  }
+
+  /* ——— TOUCH DEVICE CURSOR FIX ——— */
+  @media (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+    .float-subtle, .float-slow {
+      animation: none;
+    }
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-[hsl(185,100%,50%)] via-[hsl(270,60%,65%)] to-[hsl(185,100%,50%)] bg-clip-text text-transparent;
+  }
+  .text-gradient-green {
+    @apply bg-gradient-to-r from-[hsl(142,72%,45%)] to-[hsl(185,100%,50%)] bg-clip-text text-transparent;
+  }
+  /* Responsive typography helpers */
+  .text-heading-xl {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.1;
+  }
+  .text-heading-lg {
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    line-height: 1.15;
+  }
+  .text-heading-md {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    line-height: 1.2;
+  }
+  .text-body-lg {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
   }
 }

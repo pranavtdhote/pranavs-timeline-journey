@@ -1,12 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <title>Pranav Dhote | Full-Stack Developer & AI/ML Enthusiast</title>
-    <meta name="description" content="Portfolio of Pranav Dhote - Information Technology student, Full-Stack Developer specializing in AI, Blockchain, and innovative web solutions. Explore my projects and experience." />
+    <meta name="description" content="Developer portfolio of Pranav Dhote - Full-Stack Developer & Machine Learning Enthusiast. Explore interactive projects, skills, and experience in an immersive developer workspace." />
     <meta name="author" content="Pranav Dhote" />
-    <meta name="keywords" content="Pranav Dhote, Full-Stack Developer, AI, Machine Learning, Blockchain, Web Development, Portfolio" />
+    <meta name="keywords" content="Pranav Dhote, Full-Stack Developer, AI, Machine Learning, Blockchain, Web Development, Portfolio, React, Node.js" />
 
     <meta property="og:title" content="Pranav Dhote | Full-Stack Developer Portfolio" />
     <meta property="og:description" content="AI-powered Full-Stack Developer building future-ready solutions with React, Node.js, Blockchain, and Machine Learning" />
@@ -20,10 +22,18 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <script>
+      window.addEventListener('error', function(e) {
+        document.body.innerHTML += '<div style="color:red;font-size:16px;z-index:999999;position:fixed;top:0;left:0;background:black;padding:20px;">' + e.message + '<br>' + e.filename + ':' + e.lineno + '</div>';
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        document.body.innerHTML += '<div style="color:red;font-size:16px;z-index:999999;position:fixed;top:50px;left:0;background:black;padding:20px;">Promise Rejection: ' + (e.reason && e.reason.message ? e.reason.message : e.reason) + '</div>';
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
